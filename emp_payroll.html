@@ -85,7 +85,7 @@
                 </div>
             </div>
             <div class="row-content">
-                <label class="label text" for="salary">Choose your salary: </label>
+                <label class="label text" for="salary">Salary: </label>
                 <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100"
                     value="400000" />
                 <output class="salary-output" for="salary">400000</output>
@@ -96,13 +96,27 @@
                 <label class="label text" for="startDate">Start Date</label>
                 <input class="input" type="date" placeholder="Enter date and time" id="party" name="bday" />
             </div>
+
+            <!-- UC 6 -->
+            <div class="row-content">
+                <label class="label text" for="notes">Notes</label>
+                <textarea class="input" name="Notes" id="notes" placeholder="Write notes here..." style="height: 100px"></textarea>
+            </div>
+            <div class="buttonParent">
+                <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
+                <div class="submit-reset">
+                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                    <button type="reset" class="resetButton button">Reset</button>
+                </div>
+            </div>
         </form>
     </div>
     <script>
         const salary = document.querySelector("#salary");
         const output = document.querySelector(".salary-output");
         output.textContent = salary.value;
-        salary.addEventListener("input", function () {output.textContent = salary.value;});
+        salary.addEventListener("input", function () { output.textContent = salary.value; });
     </script>
 </body>
+
 </html>
