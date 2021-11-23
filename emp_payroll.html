@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Payroll form</title>
     <link rel="stylesheet" href="emp_payroll.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
+
 <body>
     <!-- UC 1 -->
-<header class="header">
-    <div class="logo-content">
-        <img src="/Asset/logo.png" alt="logo">
-        <div>
-            <span class="emp-text">EMPLOYEE</span><br/>
-            <span class="emp-text emp-payroll">PAYROLL</span> 
+    <header class="header">
+        <div class="logo-content">
+            <img src="/Asset/logo.png" alt="logo">
+            <div>
+                <span class="emp-text">EMPLOYEE</span><br />
+                <span class="emp-text emp-payroll">PAYROLL</span>
+            </div>
         </div>
+    </header>
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save(event);return false">
+            <!-- UC 2 -->
+            <div class="form-head">Employee Payroll form</div>
+            <div class="row-content">
+                <label class="label text" for="name">Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+
+            <!-- UC 3 -->
+            <div class="row-content">
+                <label class="label text" for="profile">Profile image</label>
+                <div class="profile-radio-content">
+                    <label>
+                        <input type="radio" name="profile" id="profile1" value="/Asset/Profile pic/Ellipse -10.png"
+                            required />
+                        <img class="profile" id="image1" src="/Asset/Profile pic/Ellipse -10.png" />
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" id="profile2" value="/Asset/Profile pic/Ellipse -2.png"
+                            required />
+                        <img class="profile" id="image2" src="/Asset/Profile pic/Ellipse -2.png" />
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" id="profile3" value="/Asset/Profile pic/Ellipse -3.png"
+                            required />
+                        <img class="profile" id="image3" src="/Asset/Profile pic/Ellipse -3.png" />
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" id="profile4" value="/Asset/Profile pic/Ellipse -4.png"
+                            required />
+                        <img class="profile" id="image4" src="/Asset/Profile pic/Ellipse -4.png" />
+                    </label>
+                </div>
+            </div>
+        </form>
     </div>
-</header>
-<div class="form-content">
-    <form class="form" action="#" onsubmit="save(event);return false">
-      <!-- UC 2 -->
-      <div class="form-head">Employee Payroll form</div>
-      <div class="row-content">
-        <label class="label text" for="name">Name</label>
-        <input class="input" type="text" id="name" name="name" placeholder="Your name" required/>
-</div>
 </body>
 </html>
